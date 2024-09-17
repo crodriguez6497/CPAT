@@ -17,7 +17,7 @@ A C-PAT deployment requires two other mandatory services, which are freely avail
   - A MySQL database
 
 C-PAT offers two additional containers that provide "starter" deployments that could be used as a point of reference for production deployments:
-  - Our `RMF Tools Keycloak Container <https://hub.docker.com/r/nswccrane/c-pat-auth>`_ offers a pre-configured demonstration configuration of Keycloak that provides the necessary clients, scopes, and roles for C-PAT and 'STIG Manager <https://stig-manager.readthedocs.io/>'. 
+  - Our `RMF Tools Keycloak Container <https://hub.docker.com/r/nswccrane/c-pat-auth>`_ offers a pre-configured demonstration configuration of Keycloak that provides the necessary clients, scopes, and roles for C-PAT and `STIG Manager <https://stig-manager.readthedocs.io/>`. 
 
 C-PAT is architected to be deployed at the enterprise level with orchestration platforms such as Kubernetes or OpenShift. However, containerization allows C-PAT deployments to be readily scaled up or down and it can be orchestrated on a single laptop with tools such as docker-compose.
 

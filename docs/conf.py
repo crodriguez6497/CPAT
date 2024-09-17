@@ -7,7 +7,9 @@ author = 'Christian Rodriguez'
 release = '0.1'
 version = '0.1.0'
 
-# -- General configuration
+html_css_files = [
+    'css/custom.css',
+]
 
 extensions = [
     'sphinx_rtd_theme',
