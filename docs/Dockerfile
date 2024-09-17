@@ -1,6 +1,5 @@
 FROM sphinxdoc/sphinx:7.1.2
+
 WORKDIR /docs
-COPY requirements.txt .
+ADD requirements.txt /docs
 RUN pip3 install -r requirements.txt
-COPY Makefile .
-COPY source ./source
