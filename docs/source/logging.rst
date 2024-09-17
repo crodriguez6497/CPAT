@@ -101,8 +101,6 @@ Common
     additionalProperties: false
 
 
-
-
 The ``data`` object is extensible and will contain structured details concerning the event. 
 
 The contents of the logs can be controlled with the following :ref:`Environment Variables`: 

@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'C-PAT'
+copyright = '2024 U.S. Federal Government (in countries where recognized)'
+author = 'Christian Rodriguez'
 
 release = '0.1'
 version = '0.1.0'
@@ -17,6 +17,11 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx_rtd_theme',
+    'sphinxcontrib.images',
+    'sphinx.ext.todo',
+    'myst_parser',    
+    'sphinx_tabs.tabs'
 ]
 
 intersphinx_mapping = {
@@ -26,10 +31,14 @@ intersphinx_mapping = {
 intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
-
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = "sphinx_rtd_theme"
+html_theme_options = {
+    'prev_next_buttons_location': 'both',
+    'sticky_navigation': True
+}
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
