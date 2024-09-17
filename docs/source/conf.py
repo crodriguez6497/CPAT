@@ -1,4 +1,6 @@
 import sphinx_rtd_theme
+import codecs
+source_encoding = 'utf-8-sig'
 
 project = 'C-PAT'
 copyright = '2024 U.S. Federal Government (in countries where recognized)'

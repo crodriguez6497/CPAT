@@ -13,8 +13,8 @@ if exist _build (
 REM Build Docker image
 docker build -t %SPHINX_IMAGE_W_REQUIREMENTS% .
 
-REM Run Docker container and copy results
-docker run --rm -v "%cd%\source:/docs/source" -v "%cd%\_build:/docs/_build" %SPHINX_IMAGE_W_REQUIREMENTS% make html
+REM Run Docker container and build documentation
+docker run --rm -v "%cd%\_build:/docs/_build" %SPHINX_IMAGE_W_REQUIREMENTS% make html SPHINXOPTS="-D source_encoding=utf-8"
 
 REM Check if files were copied
 if exist _build\html (

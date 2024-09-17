@@ -130,7 +130,7 @@ Procedure
 
    *Make note of the address and ports these servers are using (as well as any other values that differ from the defaults). Set the appropriate* :ref:`Environment Variables` *to these values so C-PAT will be able to reach them*
 
-#. Using git, Clone the repository. ``git clone https://github.com/NSWC-Crane/C-PAT.git`
+#. Using git, Clone the repository. ``git clone https://github.com/NSWC-Crane/C-PAT.git``
 #. Navigate to ``/client`` directory in the project folder. 
 #. Run ``npm ci`` to install the required packages specified in the package-lock.json file.
 #. Build the client by running the following command: ``npm run ng build --configuration cpat``
