@@ -1,35 +1,24 @@
-@ECHO OFF
+@echo off
+set SPHINX_IMAGE_W_REQUIREMENTS=sphinx-w-requirements
 
-pushd %~dp0
+REM Change to this script directory
+cd /d "%~dp0"
 
-REM Command file for Sphinx documentation
-
-if "%SPHINXBUILD%" == "" (
-	set SPHINXBUILD=sphinx-build
-)
-set SOURCEDIR=source
-set BUILDDIR=build
-
-if "%1" == "" goto help
-
-%SPHINXBUILD% >NUL 2>NUL
-if errorlevel 9009 (
-	echo.
-	echo.The 'sphinx-build' command was not found. Make sure you have Sphinx
-	echo.installed, then set the SPHINXBUILD environment variable to point
-	echo.to the full path of the 'sphinx-build' executable. Alternatively you
-	echo.may add the Sphinx directory to PATH.
-	echo.
-	echo.If you don't have Sphinx installed, grab it from
-	echo.http://sphinx-doc.org/
-	exit /b 1
+REM Clean up _build directory
+if exist _build (
+    for /d %%i in (_build\*) do rmdir /s /q "%%i"
+    del /q _build\*
 )
 
-%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
-goto end
+REM Build Docker image
+docker build -t %SPHINX_IMAGE_W_REQUIREMENTS% .
 
-:help
-%SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
+REM Run Docker container and copy results
+docker run --rm -v "%cd%":/source %SPHINX_IMAGE_W_REQUIREMENTS% /bin/bash -c "cp -r /source/* /docs && make html && cp -r /docs/_build/html /source/_build/"
 
-:end
-popd
+REM Check if files were copied
+if exist _build\html (
+    echo Build successful. Output is in _build\html directory.
+) else (
+    echo Build may have failed or files were not copied correctly.
+)

@@ -11,8 +11,10 @@ version = '0.1.0'
 
 extensions = [
     'sphinx_rtd_theme',
-    'sphinx.ext.todo', 
-    'sphinx_tabs.tabs'
+    'sphinx.ext.todo',
+    'myst_parser',    
+    'sphinx_tabs.tabs',
+    'sphinxcontrib.images'
 ]
 
 images_config = {
@@ -32,7 +34,7 @@ html_theme_options = {
     'sticky_navigation': True
 }
 html_static_path = ['_static']
-
+html_output_dir = '_build/html'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
