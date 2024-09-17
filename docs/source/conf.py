@@ -1,27 +1,4 @@
 import sphinx_rtd_theme
-import codecs
-import sys
-import os
-
-source_encoding = 'utf-8-sig'
-
-def decode_file(file_path):
-    encodings = ['utf-8', 'utf-8-sig', 'latin-1', 'ascii']
-    for enc in encodings:
-        try:
-            with codecs.open(file_path, 'r', encoding=enc) as f:
-                content = f.read()
-            return content
-        except UnicodeDecodeError:
-            continue
-    raise UnicodeDecodeError(f"Unable to decode {file_path} with any of the attempted encodings")
-
-def source_read_handler(app, docname, source):
-    file_path = app.env.doc2path(docname)
-    source[0] = decode_file(file_path)
-
-def setup(app):
-    app.connect('source-read', source_read_handler)
 
 project = 'C-PAT'
 copyright = '2024 U.S. Federal Government (in countries where recognized)'
