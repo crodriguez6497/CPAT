@@ -1,5 +1,6 @@
 import sphinx_rtd_theme
 
+project = 'C-PAT'
 copyright = '2024 U.S. Federal Government (in countries where recognized)'
 author = 'Christian Rodriguez'
 
@@ -30,6 +31,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = "sphinx_rtd_theme"
 
 html_theme_options = {
+    'logo_only': True,
     'prev_next_buttons_location': 'both',
     'sticky_navigation': True
 }
