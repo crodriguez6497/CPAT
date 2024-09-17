@@ -24,7 +24,6 @@ images_config = {
 }
 
 templates_path = ['_templates']
-
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = "sphinx_rtd_theme"
@@ -33,6 +32,7 @@ html_theme_options = {
     'prev_next_buttons_location': 'both',
     'sticky_navigation': True
 }
+html_show_sphinx = False
 html_static_path = ['_static']
 html_output_dir = '_build/html'
 epub_show_urls = 'footnote'
