@@ -11,7 +11,6 @@ version = '0.1.0'
 
 extensions = [
     'sphinx_rtd_theme',
-    'sphinxcontrib.images',
     'sphinx.ext.todo',
     'myst_parser',    
     'sphinx_tabs.tabs'
