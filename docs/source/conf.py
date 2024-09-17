@@ -1,6 +1,4 @@
-# Configuration file for the Sphinx documentation builder.
-
-# -- Project information
+import sphinx_rtd_theme
 
 project = 'C-PAT'
 copyright = '2024 U.S. Federal Government (in countries where recognized)'
@@ -12,17 +10,18 @@ version = '0.1.0'
 # -- General configuration
 
 extensions = [
-    'sphinx.ext.duration',
-    'sphinx.ext.doctest',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
     'sphinx_rtd_theme',
     'sphinxcontrib.images',
     'sphinx.ext.todo',
     'myst_parser',    
     'sphinx_tabs.tabs'
 ]
+
+images_config = {
+    'override_image_directive': True,
+    'default_image_width': '50%',
+    'default_group': 'default'
+}
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
@@ -31,6 +30,7 @@ intersphinx_mapping = {
 intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
+
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output
 
@@ -39,6 +39,8 @@ html_theme_options = {
     'prev_next_buttons_location': 'both',
     'sticky_navigation': True
 }
+html_static_path = ['_static']
+
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
