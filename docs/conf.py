@@ -1,6 +1,5 @@
 import sphinx_rtd_theme
 
-project = 'C-PAT'
 copyright = '2024 U.S. Federal Government (in countries where recognized)'
 author = 'Christian Rodriguez'
 
