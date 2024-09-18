@@ -17,10 +17,27 @@ STIG Manager
 
 Specify your STIG Manager integration with the following Environment Variables:
 
- * *STIGMAN_OIDC_CLIENT_ID* - Default: stig-manager - The OIDC clientId for STIG Manager. 
- * *STIGMAN_API_URL* - Default: http://localhost:54000/api - The URL to the STIG Manager API
- * *STIGMAN_SCOPE_PREFIX* - **No default** - String used as a prefix for each STIG Manager scope when authenticating to the OIDC Provider. This will likely match your ``STIGMAN_CLIENT_SCOPE_PREFIX`` environment variable configured in STIG Manager (if applicable). 
- * *STIGMAN_EXTRA_SCOPES* - **No default** - Scopes to request in addition to ``stig-manager:stig`` ``stig-manager:stig:read`` ``stig-manager:collection`` ``stig-manager:user`` ``stig-manager:user:read`` ``stig-manager:op`` ``openid``
+  .. list-table:: STIG Manager Environmenment Variables: 
+   :widths: 20 30 50
+   :header-rows: 1
+   :class: tight-table
+
+   * - Variable
+     - Default
+     - Description
+   * - ``STIGMAN_OIDC_CLIENT_ID``
+     - stig-manager
+     - The OIDC clientId for STIG Manager.
+   * - ``STIGMAN_API_URL``
+     - http://localhost:54000/api
+     - The URL to the STIG Manager API
+   * - ``STIGMAN_SCOPE_PREFIX``
+     - **No default**
+     - String used as a prefix for each STIG Manager scope when authenticating to the OIDC Provider. This will likely match your ``STIGMAN_CLIENT_SCOPE_PREFIX`` environment variable configured in STIG Manager (if applicable).
+   * - ``STIGMAN_EXTRA_SCOPES``
+     - *No default**
+     - Scopes to request in addition to ``stig-manager:stig`` ``stig-manager:stig:read`` ``stig-manager:collection`` ``stig-manager:user`` ``stig-manager:user:read`` ``stig-manager:op`` ``openid``
+
 
 Tenable
 ------
