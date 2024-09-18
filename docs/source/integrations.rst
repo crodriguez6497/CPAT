@@ -17,9 +17,7 @@ Specify your STIG Manager integration with the following Environment Variables:
 .. note::
   C-PAT has been tested and configured to work when C-PAT and STIG Manager are housed within the same OIDC realm, therefor, the value set for ``CPAT_OIDC_PROVIDER`` will also be used for obtaining a token for STIG Manager.
   If you are using the provided `RMFTools Keycloak container <https://github.com/NSWC-Crane/C-PAT/tree/C-PAT-AUTH>`_, the default value for STIGMAN_OIDC_CLIENT_ID can be used.
-  
-
-  -------------------------------
+-------------------------------
 
  * *STIGMAN_OIDC_CLIENT_ID* - Default: stig-manager - The OIDC clientId for STIG Manager. 
  * *STIGMAN_API_URL* - Default: http://localhost:54000/api - The URL to the STIG Manager API
