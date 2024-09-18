@@ -32,7 +32,7 @@ The JWT produced by the Identity Provider should provide the claims specified be
 .. code-block:: JSON
    :caption: The decoded data payload of a sample JWT, with some relevant claims highlighted.
    :name: A Decoded JWT
-   :emphasize-lines: 18,19,20,40,42
+   :emphasize-lines: 18,19,20,21,40,42
 
     {
       "exp": 1695154418,
@@ -188,11 +188,26 @@ Configure C-PAT to use your Authentication provider
 
 Most commonly, C-PAT will require the below Environment Variable to be specified, unless their default values are appropriate.  Check the :ref:`Environment Variables` document for an exhaustive list of Environment Variables and their default values.
 
- * ``CPAT_OIDC_PROVIDER`` - Sample value:  ``http://localhost:8080/auth/realms/RMFTools`` - The base URL of the OIDC provider issuing signed JWTs for the API.  The string ``/.well-known/openid-configuration`` will be appended when fetching metadata.
- * ``CPAT_OAUTH_CLIENTID`` - Suggested value: ``c-pat``
- * ``CPAT_JWT_PRIVILEGES_CLAIM`` - Sample value: ``realm_access.roles``
- * ``CPAT_CLIENT_EXTRA_SCOPES`` - Sample value: ``offline_access`` 
+.. list-table:: C-PAT OIDC Environmenment Variables: 
+ :widths: 20 25 55
+ :header-rows: 1
+ :class: tight-table
 
+ * - Variable
+   - Default
+   - Description
+ * - ``CPAT_OIDC_PROVIDER``
+   - ``http://localhost:8080/auth/realms/RMFTools``
+   - The base URL of the OIDC provider issuing signed JWTs for the API.  The string ``/.well-known/openid-configuration`` will be appended when fetching metadata.
+ * - ``CPAT_OAUTH_CLIENTID``
+   - ``c-pat``
+   - The OIDC clientId for C-PAT.
+ * - ``CPAT_JWT_PRIVILEGES_CLAIM``
+   - ``realm_access.roles``
+   - The access token claim whose value is the user’s privileges.
+ * - ``CPAT_CLIENT_EXTRA_SCOPES``
+   - ``offline_access`` 
+   - Scopes to request in addition to: ``c-pat:read`` ``c-pat:write`` ``c-pat:op`` ``openid``
 
 A sample Keycloak image, recommended only for testing purposes, is available on `Github. <https://github.com/NSWC-Crane/C-PAT/tree/C-PAT-AUTH>`_ Most of the default values for the above Environment variables will work with this image. 
 
