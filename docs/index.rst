@@ -24,4 +24,5 @@ These pages describe how to deploy C-PAT
 	source/logging
 	source/environment-variables
 	source/securing
+	source/integrations
 

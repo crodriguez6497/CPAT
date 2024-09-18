@@ -18,7 +18,7 @@
 "CPAT_CLIENT_EXTRA_SCOPES","| **No default**
 | OAuth2 scopes to request in addition to ``c-pat:read`` ``c-pat:write`` ``c-pat:op`` ``openid``. Some OIDC providers (Okta) generate a refresh token only if the scope ``offline_access`` is requested","Client"
 "CPAT_CLIENT_ID","| **Default** ``c-pat``
-| The OIDC clientId of the web client","Client"
+| The OIDC clientId for C-PAT","Client"
 "CPAT_SCOPE_PREFIX","| **No default**
 | String used as a prefix for each scope when authenticating to the OIDC Provider. Some providers (Azure AD) expect scope requests in the format ``api://<application_id>/<scope>``, where ``api://<application_id>/`` is the required prefix.","Client"
 "CPAT_CLIENT_REFRESH_DISABLED","| **Default** ``false``
