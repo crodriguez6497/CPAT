@@ -33,7 +33,7 @@ Required and optional components of a C-PAT deployment:
 **API** (Always Required)
   A RESTful API implemented on the current LTS version of Node.js and the Express web application framework. Exposes 1 HTTP port. Built as a stateless container service.
 **Web Client** (Recommended for Interactive Access)
-  A Single Page Application (SPA) using the Angular framework. The Web Client is often enabled as static content from the API container which does not require a separate container.
+  A Single Page Application (SPA) using the Angular framework. The Web Client is served from the API container and does not require a separate container.
 **OIDC Provider**  (Always Required)
   An authentication service that manages user accounts and issues OAuth2 JWT tokens to the Web Client which authorize access to the API. Keycloak has been thoroughly tested and selected as the provider of choice, however, limited testing has been done using authentication services from Okta and Azure AD.
 **MySQL Database**  (Always Required)
@@ -131,13 +131,9 @@ Procedure
    *Make note of the address and ports these servers are using (as well as any other values that differ from the defaults). Set the appropriate* :ref:`Environment Variables` *to these values so C-PAT will be able to reach them*
 
 #. Using git, Clone the repository. ``git clone https://github.com/NSWC-Crane/C-PAT.git``
-#. Navigate to ``/client`` directory in the project folder. 
-#. Run ``npm ci`` to install the required packages specified in the package-lock.json file.
-#. Build the client by running the following command: ``npm run ng build --configuration cpat``
 #. Navigate to ``/api`` directory in the project folder. 
-#. Run ``npm ci`` to install the required Node.js packages specified in the package-lock.json file. 
 #. From within the ``/api`` directory, open the .env file. Set Environment Variables as appropriate for your environment.
-#. From within the ``/api`` directory, start Node, specifying the index.js file:  ``node index.js``
+#. Run ``npm run start:build-client``. This command will download the required packages for the client and API, build the client files, and start the API which dynamically serves the client.
 
 .. note::
   When running from source, the client files are located at ``../client/dist`` relative to the API directory. If these files are moved, set the ``CPAT_CLIENT_DIRECTORY`` environment variable as appropriate.

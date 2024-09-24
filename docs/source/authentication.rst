@@ -206,7 +206,7 @@ Most commonly, C-PAT will require the below Environment Variable to be specified
    - ``realm_access.roles``
    - The access token claim whose value is the user’s privileges.
  * - ``CPAT_CLIENT_EXTRA_SCOPES``
-   - ``offline_access`` 
+   - **No default** 
    - Scopes to request in addition to: ``c-pat:read`` ``c-pat:write`` ``c-pat:op`` ``openid``
 
 A sample Keycloak image, recommended only for testing purposes, is available on `Github. <https://github.com/NSWC-Crane/C-PAT/tree/C-PAT-AUTH>`_ Most of the default values for the above Environment variables will work with this image. 
