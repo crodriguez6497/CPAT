@@ -18,11 +18,11 @@ These pages describe how to deploy C-PAT
 	:numbered: 4
 	:caption: Contents:
 
-	source/installation-and-setup
-	source/authentication
-	source/db
-	source/logging
-	source/environment-variables
-	source/securing
-	source/integrations
+	source/install/installation-and-setup
+	source/install/authentication
+	source/install/db
+	source/install/logging
+	source/install/environment-variables
+	source/install/securing
+	source/install/integrations
 
