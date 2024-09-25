@@ -1,7 +1,7 @@
 .. _integrations:
 
 
-Integrations 
+Integrations Configuration
 ########################################
 
 

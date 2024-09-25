@@ -1,28 +1,16 @@
+C-PAT Documentation
+========================================
 
-.. _installation-and-setup-index:
 
-Setup and Deployment
-===============================
+What is C-PAT?
+-------------------------------
+C-PAT is an API and web client currently being developed through Naval Surface Warfare Center Crane Division that aims to automate vulnerability documentation and tracking. C-PAT™ is, and will continue to be architected with emphasis towards interoperability with other RMF Tools. C-PAT™ is designed to integrate with `STIG Manager <https://github.com/NUWCDIVNPT/stig-manager>`_ and `Tenable.sc [Assured Compliance Assessment Solution (ACAS) Nessus Scanner] <https://www.tenable.com/products/security-center>`_ to provide a more comprehensive solution for oversight throughout the RMF process.
 
-.. meta::
-  :description: These pages describe how to use C-PAT.
-
-These pages describe how to deploy C-PAT
-
-.. note:
-   This section is still under development.
 
 
 .. toctree::
-	:maxdepth: 2
-	:numbered: 4
+	:maxdepth: 1
 	:caption: Contents:
 
-	source/installation-and-setup
-	source/authentication
-	source/db
-	source/logging
-	source/environment-variables
-	source/securing
-	source/integrations
+	source/install/index
 

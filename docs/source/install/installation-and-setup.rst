@@ -128,11 +128,11 @@ Procedure
    - :ref:`keycloak`
    - :ref:`mySQL`
 
-   *Make note of the address and ports these servers are using (as well as any other values that differ from the defaults). Set the appropriate* :ref:`Environment Variables` *to these values so C-PAT will be able to reach them*
+   *Make note of the address and ports these servers are using (as well as any other values that differ from the defaults). Set the appropriate* :ref:`Environment Variables` *to these values so C-PAT will be able to reach them.*
 
 #. Using git, Clone the repository. ``git clone https://github.com/NSWC-Crane/C-PAT.git``
-#. Navigate to ``/api`` directory in the project folder. 
-#. From within the ``/api`` directory, open the .env file. Set Environment Variables as appropriate for your environment. An example can be found `here <https://github.com/NSWC-Crane/C-PAT/blob/main/api/.env>`_.
+#. Navigate to the ``/api`` directory in the project folder. 
+#. From within the ``/api`` directory, open the .env file. Set the Environment Variables as appropriate for your environment. An example can be found on `GitHub <https://github.com/NSWC-Crane/C-PAT/blob/main/api/.env>`_.
 #. Run ``npm run start:build-client``. This command will download the required packages for the client and API, build the client files, and start the API which dynamically serves the client.
 
 .. note::
