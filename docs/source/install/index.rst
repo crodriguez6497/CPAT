@@ -1,16 +1,14 @@
 
-.. _installation-and-setup-index:
+.. _installation-index:
 
 Setup and Deployment
 ===============================
 
 .. meta::
-  :description: These pages describe how to use C-PAT.
+  :description: Deploying C-PAT.
 
-These pages describe how to deploy C-PAT
+These pages describe how to setup and deploy C-PAT
 
-.. note:
-   This section is still under development.
 
 
 .. toctree::
@@ -18,7 +16,7 @@ These pages describe how to deploy C-PAT
 	:numbered: 4
 	:caption: Contents:
 
-	installation-and-setup
+	installation
 	authentication
 	db
 	logging
