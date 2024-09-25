@@ -10,7 +10,7 @@ While it is possible to run C-PAT independently, to fully realize the benefits o
 
 
 User Management
----------------
+########################################
 .. note::
   C-PAT has been tested and configured to work when C-PAT and STIG Manager are housed within the same OIDC realm, therefor, the value set for ``CPAT_OIDC_PROVIDER`` will also be used for obtaining a token for STIG Manager.
   If you are using the provided `RMFTools Keycloak container <https://github.com/NSWC-Crane/C-PAT/tree/C-PAT-AUTH>`_, the default value for ``STIGMAN_OIDC_CLIENT_ID`` can be used.
@@ -38,37 +38,37 @@ User Management
 
 
 Collection Management
-------
+########################################
 
 Collection management is the process of creating and managing collections of STIGs within C-PAT. Collections are used to group STIGs together for the purpose of running assessments against them. Collections can be created manually or automatically by importing collections from STIG Manager.
 
 
 Integrations
-------
+########################################
 
 STIG Manager
 Tenable.sc
 
 
 VRAM IAV Import
-------
+########################################
 
 VRAM IAV Import
 
 
 Nessus Plugin Mapping
-------
+########################################
 
 Nessus Plugin Mapping
 
 
 Set A&A Packages
-------
+########################################
 
 Set A&A Packages
 
 
 Set Assigned Teams
-------
+########################################
 
 Set Assigned Teams
