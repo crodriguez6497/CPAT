@@ -15,5 +15,5 @@ These pages describe the administrative portal features contained in C-PAT.
 	:numbered: 4
 	:caption: Contents:
 
-	integrations
+	admin-portal
 
