@@ -14,10 +14,10 @@ In either case, you will have to set Keycloak environment variable `PROXY_ADDRES
 
 
 
-nginx for TLS
+Nginx for TLS
 ========================
 
-C-PAT provides two branches on GitHub with sample RMF Tools nginx deployments that a configuration file that may be useful to those setting up a Production deployment of C-PAT and STIG Manager:
+C-PAT provides two branches on GitHub with sample RMF Tools nginx deployments with a configuration file that may be useful to those setting up a Production deployment of C-PAT and STIG Manager:
 
 
 
