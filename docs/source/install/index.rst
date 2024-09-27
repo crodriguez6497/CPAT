@@ -20,6 +20,7 @@ These pages describe how to setup and deploy C-PAT
 	authentication
 	db
 	logging
+	reverse-proxy
 	environment-variables
 	securing
 	integrations
