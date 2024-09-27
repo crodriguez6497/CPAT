@@ -9,6 +9,7 @@ C-PAT offers integrations with `STIG Manager <https://github.com/NUWCDIVNPT/stig
 While it is possible to run C-PAT independently, to fully realize the benefits of C-PAT it is **strongly** recommended that C-PAT be configured to run in conjunction with these tools.
 
 
+
 User Management
 ########################################
 .. note::
@@ -37,10 +38,12 @@ User Management
    - Scopes to request in addition to: ``stig-manager:stig`` ``stig-manager:stig:read`` ``stig-manager:collection`` ``stig-manager:user`` ``stig-manager:user:read`` ``stig-manager:op`` ``openid``
 
 
+
 Collection Management
 ########################################
 
 Collection management is the process of creating and managing collections of STIGs within C-PAT. Collections are used to group STIGs together for the purpose of running assessments against them. Collections can be created manually or automatically by importing collections from STIG Manager.
+
 
 
 Integrations
@@ -50,10 +53,12 @@ STIG Manager
 Tenable.sc
 
 
+
 VRAM IAV Import
 ########################################
 
 VRAM IAV Import
+
 
 
 Nessus Plugin Mapping
@@ -62,10 +67,12 @@ Nessus Plugin Mapping
 Nessus Plugin Mapping
 
 
+
 Set A&A Packages
 ########################################
 
 Set A&A Packages
+
 
 
 Set Assigned Teams

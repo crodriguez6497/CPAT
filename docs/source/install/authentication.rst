@@ -199,6 +199,9 @@ Most commonly, C-PAT will require the below Environment Variable to be specified
  * - ``CPAT_OIDC_PROVIDER``
    - ``http://localhost:8080/auth/realms/RMFTools``
    - The base URL of the OIDC provider issuing signed JWTs for the API.  The string ``/.well-known/openid-configuration`` will be appended when fetching metadata.
+ * - ``CPAT_CLIENT_OIDC_PROVIDER``
+   - ``CPAT_OIDC_PROVIDER``
+   - Client override of the base URL of the OIDC provider issuing signed JWTs for the API. The string ``/.well-known/openid-configuration`` will be appended when fetching metadata.
  * - ``CPAT_OAUTH_CLIENTID``
    - ``c-pat``
    - The OIDC clientId for C-PAT.
