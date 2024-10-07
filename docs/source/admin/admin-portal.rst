@@ -64,7 +64,7 @@ Integrations
 STIG Manager
 ^^^^^^^^^^^^
 
-The STIG Manager integration allows administrators to import collections from STIG Manager into C-PAT. To import collections:
+The STIG Manager integration allows administrators to import collections from STIG Manager into C-PAT, or more precisely, create a collection shell that will interface with a particular STIG Manager collection. To import collections:
 
 1. Navigate to the "STIG Manager" tab in the Admin Portal.
 2. You will see a dropdown menu labeled "Select Collection to Import...".
@@ -76,10 +76,12 @@ The STIG Manager integration allows administrators to import collections from ST
 .. note::
    Once all collections have been imported, the list will be empty, and no items will be displayed.
 
+   After importing a collection, users must still be assigned the appropriate permissions to the newly imported collection before they can view or access it.
+
 Tenable.sc
 ^^^^^^^^^^
 
-The Tenable.sc integration enables administrators to import repositories from Tenable.sc as collections in C-PAT. To import repositories:
+The Tenable Import component enables administrators to import repositories from Tenable.sc as collections in C-PAT. To import repositories:
 
 1. Go to the "TENABLE IMPORT" tab in the Admin Portal.
 2. You will see a dropdown menu labeled "Select Repository to Import...".
@@ -90,6 +92,8 @@ The Tenable.sc integration enables administrators to import repositories from Te
 
 .. note::
    Once all repositories have been imported, the list will be empty, and no items will be displayed.
+
+   After importing a repository, users must still be assigned the appropriate permissions to the newly imported collection before they can view or access it.
 
 These integrations streamline the process of creating collections in C-PAT by automatically mapping them to the appropriate external systems, ensuring consistency and reducing manual effort.
 
