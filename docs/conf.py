@@ -18,7 +18,7 @@ extensions = [
     'sphinx_tabs.tabs',
     'sphinxcontrib.images'
 ]
-html_logo = 'assets/cpat.svg'
+html_logo = 'assets/images/cpat.svg'
 images_config = {
     'override_image_directive': True,
     'default_image_width': '50%',

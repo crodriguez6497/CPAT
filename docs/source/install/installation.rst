@@ -132,7 +132,7 @@ Procedure
 
 #. Using git, Clone the repository. ``git clone https://github.com/NSWC-Crane/C-PAT.git``
 #. Navigate to the ``/api`` directory in the project folder. 
-#. From within the ``/api`` directory, open the .env file. Set the Environment Variables as appropriate for your environment. An example can be found on `GitHub <https://github.com/NSWC-Crane/C-PAT/blob/main/api/.env>`_.
+#. From within the ``/api`` directory, open or create the .env file. Set the Environment Variables as appropriate for your environment. An example can be found on `GitHub <https://github.com/NSWC-Crane/C-PAT/blob/main/api/example_env.txt>`_.
 #. Run one of the following commands:
    - ``npm run install``. This command will download the required packages for the client and API, build the client files, and start the API which dynamically serves the client.
    - ``npm run start``. This command will start the API which dynamically serves the client.

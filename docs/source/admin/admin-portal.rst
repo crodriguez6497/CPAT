@@ -4,45 +4,57 @@
 Administration Portal
 ########################################
 
-
-C-PAT offers integrations with `STIG Manager <https://github.com/NUWCDIVNPT/stig-manager>`_ and `Tenable.sc <https://www.tenable.com/products/security-center>`_.
-While it is possible to run C-PAT independently, to fully realize the benefits of C-PAT it is **strongly** recommended that C-PAT be configured to run in conjunction with these tools.
+The Admin Portal is a centralized interface for managing C-PAT. It provides a way to manage users, collections, integrations, and fine-tune options that best align with individual organizational policies and operations.
+The Admin Portal is accessible to users with the ``admin`` role assigned by the OIDC provider and provided in the token. Users whose token contains the admin role will automatically be presented with an "Admin Portal" button in the side menu bar. 
 
 
 
 User Management
 ########################################
+
+The User Management section allows administrators to view, manage, and modify user accounts within CPAT.
+
 .. note::
-  C-PAT has been tested and configured to work when C-PAT and STIG Manager are housed within the same OIDC realm, therefor, the value set for ``CPAT_OIDC_PROVIDER`` will also be used for obtaining a token for STIG Manager.
-  If you are using the provided `RMFTools Keycloak container <https://github.com/NSWC-Crane/C-PAT/tree/C-PAT-AUTH>`_, the default value for ``STIGMAN_OIDC_CLIENT_ID`` can be used.
+	By default, when a user first logs into C-PAT, they are assigned a ``PENDING`` account status and will not be able to access the application until an administrator approves their account. This is to ensure that only authorized users have access to the application.
+	To approve a user account, an administrator must navigate to the User Management section, select the user account from the dropdown at the bottom of the User Table, and by change the Account Status to ``ACTIVE``. Once approved, the user will be able to access the application.
 
-.. list-table:: STIG Manager Environmenment Variables: 
- :widths: 20 25 55
- :header-rows: 1
- :class: tight-table
+Assuming a correct C-PAT and OIDC configuration, user data *should* be automatically populated from the OIDC provider. If the user data is not automatically populated, the user data can be manually entered by an administrator. Accurate and complete user data is important to the flow of the C-PAT application, particularly when it comes to exporting into the eMASS excel format. User first name, last name, email, phone number, and office/organization are all pre-populated into an export format when available.
 
- * - Variable
-   - Default
-   - Description
- * - ``STIGMAN_OIDC_CLIENT_ID``
-   - stig-manager
-   - The OIDC clientId for STIG Manager.
- * - ``STIGMAN_API_URL``
-   - http://localhost:54000/api
-   - The URL to the STIG Manager API.
- * - ``STIGMAN_SCOPE_PREFIX``
-   - **No default**
-   - String used as a prefix for each STIG Manager scope when authenticating to the OIDC Provider. This will likely match your ``STIGMAN_CLIENT_SCOPE_PREFIX`` environment variable configured in STIG Manager (if applicable).
- * - ``STIGMAN_EXTRA_SCOPES``
-   - **No default**
-   - Scopes to request in addition to: ``stig-manager:stig`` ``stig-manager:stig:read`` ``stig-manager:collection`` ``stig-manager:user`` ``stig-manager:user:read`` ``stig-manager:op`` ``openid``
+.. list-table:: C-PAT Collection Privileges: 
+  :widths: 20 60 20
+  :header-rows: 1
+  :class: tight-table
 
-
+  * - Privilege
+    - Allows
+  * - Viewer
+    - The Viewer role is most commonly attributed to readonly access. Users who have been granted the Viewer role for a collection can view the collection and its associated POAMs, Assets, Labels, etc. Users with the Viewer role however, cannot make any changes or add new items.
+  * - Submitter
+    - The Submitter role is the recommended role for users who should not be restricted to readonly access and who do not explicitly need POAM approval access for the collection. Users with Submitter access will have access to add and modify data for POAMs, Assets, Labels, etc.
+  * - Approver 
+    - The Approver role is the recommended role for users who need to approve POAMs for the collection. Users with the Approver role will have the same access as that of the Submitter role, in addition to access to issue final approval or rejection for CAT II and CAT III POAMs. In the case of CAT I POAMs, an Approver can (and should) review and mark the POAM as approved, but the final approval must be issued by a CAT I Approver.
+  * - CAT I Approver  
+    - The CAT I Approver role provides the highest level of access to a collection. Users with the CAT I Approver role will have the same access as that of the Approver role, in addition to the ability to issue final approval for CAT I POAMs. CAT I Approvers are the only users who can issue final approval for CAT I POAMs.
 
 Collection Management
 ########################################
 
-Collection management is the process of creating and managing collections of STIGs within C-PAT. Collections are used to group STIGs together for the purpose of running assessments against them. Collections can be created manually or automatically by importing collections from STIG Manager.
+.. warning::
+	Manual creation of collections is not recommended when data ingestion from STIG Manager or Tenable is desired. Collections should be created automatically imported via the STIG Manager or Tenable Import section within the Admin Portal to ensure the proper collection association.
+
+Collection management provides C-PAT administrators with the ability to manually create new collections or alter existing collections.
+
+
+.. note::
+	While the Collection Name is the only required field for a collection, it is strongly recommended that all Collection fields are filled out to ensure proper data flow within C-PAT.
+
+    Collection Field Mappings:
+    * Collection Name: The name of the collection. For collections that are imported from STIG Manager or Tenable, the collection name should match the collection name from the respective system. The collection name will be displayed in navigation across C-PAT and be contained in the file name of POAM exports.
+    * Collection Description: A brief description of the collection.
+    * System Type: This field will map to Cell ``L2`` in the eMASS format excel export.
+    * System Name: This field will map to Cell ``D5`` in the eMASS format excel export.
+    * CC/S/A/FA: This field will map to Cell ``D4`` in the eMASS format excel export.
+    * A&A Package: C-PAT provides the ability to associate an A&A package with a collection. When a collection has an A&A package set, this field will be automatically populated for any POAM created within the collection.
 
 
 

@@ -37,14 +37,14 @@ https://github.com/NSWC-Crane/C-PAT/tree/demo-auth-no-CAC
 
 ------------------------------------------
 
-.. thumbnail:: /assets/component-diagram.svg
+.. thumbnail:: /assets/images/component-diagram.svg
   :width: 50%
   :show_caption: True 
   :title: Component Diagram with Reverse Proxy
 
 ---------------------------
 
-.. thumbnail:: /assets/k8-component-diagram.svg
+.. thumbnail:: /assets/images/k8-component-diagram.svg
   :width: 50%
   :show_caption: True 
   :title: Component Diagram with Kubernetes
