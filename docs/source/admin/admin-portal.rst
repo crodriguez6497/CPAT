@@ -40,10 +40,10 @@ C-PAT Collection Privileges
 Collection Management
 ---------------------
 
+Collection management provides C-PAT administrators with the ability to manually create new collections, alter existing collections, or export all of the POAMs contained within a collection into the eMASS excel format.
+
 .. warning::
    Manual creation of collections is not recommended when data ingestion from STIG Manager or Tenable is desired. Collections should be automatically imported via the STIG Manager or Tenable Import section within the Admin Portal to ensure the proper collection association.
-
-Collection management provides C-PAT administrators with the ability to manually create new collections, alter existing collections, or export all of the POAMs contained within a collection into the eMASS excel format.
 
 .. note::
    While the Collection Name is the only required field for a collection, it is strongly recommended that all Collection fields are entered to ensure proper data flow within C-PAT.
@@ -64,7 +64,7 @@ Integrations
 STIG Manager
 ^^^^^^^^^^^^
 
-The STIG Manager integration allows administrators to import collections from STIG Manager into C-PAT, or more precisely, create a collection shell that will interface with a particular STIG Manager collection. To import collections:
+The STIG Manager component allows administrators to import collections from STIG Manager into C-PAT, or more precisely, create a collection shell that will interface with a particular STIG Manager collection. To import collections:
 
 1. Navigate to the "STIG Manager" tab in the Admin Portal.
 2. You will see a dropdown menu labeled "Select Collection to Import...".
@@ -95,15 +95,43 @@ The Tenable Import component enables administrators to import repositories from 
 
    After importing a repository, users must still be assigned the appropriate permissions to the newly imported collection before they can view or access it.
 
-These integrations streamline the process of creating collections in C-PAT by automatically mapping them to the appropriate external systems, ensuring consistency and reducing manual effort.
+The STIG Manager and Tenable Import components streamline the process of creating collections in C-PAT by automatically mapping them to the appropriate external systems, ensuring consistency and reducing manual effort. Currently, there is no way to associate a manually created collection with a STIG Manager collection or Tenable repository.
 
 
 
 
 VRAM IAV Import
-########################################
+---------------
 
-VRAM IAV Import
+VRAM IAV Export
+^^^^^^^^^^^^^^^
+
+The VRAM IAV Table can be accessed `here <https://vram.navy.mil/iav>`_.
+
+Set Default Column Options
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. note::
+   C-PAT is configured to automatically parse the required columns by name, therefore, the default column selections are only a minimum requirement. Additional columns or different column orders in the export are permissible.
+   At a minimum, the following fields ARE required: ``IAV``, ``Status``, ``Title``, ``IAV CAT``, ``Type``, ``Release Date``, ``Navy Comply Date``, ``Superseded By``, ``Known Exploits``, ``Known DoD Incidents``, ``Nessus Plugins``.
+
+.. image:: /assets/images/vram_step1.png
+   :width: 600
+   :alt: Step 1 - Default Column Options
+
+.. image:: /assets/images/vram_columnOptions.png
+   :width: 600
+   :alt: Column Options
+
+Export
+^^^^^^
+
+Click to export. The exported file can be imported to C-PAT directly below.
+
+.. image:: /assets/images/vram_step2.png
+   :width: 600
+   :alt: Step 2 - Export
+
+
 
 
 
