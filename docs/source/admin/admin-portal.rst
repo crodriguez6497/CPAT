@@ -141,7 +141,7 @@ Click to export. The exported file can now be imported to C-PAT.
 Nessus Plugin Mapping
 ---------------------
 
-The 'MAP PLUGINS TO IAV' button will initiate the process of mapping IAV data to Tenable plugin IDs. This is an intensive operation that queries the Tenable analysis endpoint to return any plugins with a cross reference[xref] for IAV items from 1990 to present. ``IAVA|20*,IAVB|20*,IAVT|20*,IAVA|199*,IAVB|199*,IAVT|199*``
+The 'MAP PLUGINS TO IAV' button will initiate the process of mapping IAV data to Tenable plugin IDs. This is an intensive operation that queries the Tenable analysis endpoint to return plugins with a cross reference[xref] for IAVs from 1990 to present. ``IAVA|20*,IAVB|20*,IAVT|20*,IAVA|199*,IAVB|199*,IAVT|199*``
 
 .. note::
    This process will take approximately 60 seconds to complete. Clicking away from the page will terminate the mapping and the process must be started over again.
