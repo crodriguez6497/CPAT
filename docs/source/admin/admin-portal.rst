@@ -151,11 +151,11 @@ The 'MAP PLUGINS TO IAV' button will initiate the process of mapping IAV data to
 Set A&A Packages
 ----------------
 
-Set A&A Packages
+C-PAT provides the ability for administrators to set A&A package options for their organization. In addition to populating the list of options when setting an A&A package for a particular collection, the A&A packages entered in the Set A&A Packages component will populate a drop down list of options in POAMs for instances when a POAM entry may require deviation from the pre-populated A&A Package.
 
 
 
 Set Assigned Teams
 ------------------
 
-Set Assigned Teams
+Similar to the Set A&A Packages component, the Set Assigned Teams component allows administrators to set a list of teams that can be assigned within POAMs. The teams entered in the Set Assigned Teams component will populate a drop down list of options in POAMs (Step 1 -  *Assignees*, Step 8 - *Milestones*, and within the POAM Extension milestones section).
