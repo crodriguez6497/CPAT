@@ -116,10 +116,12 @@ Column Options
 
 .. image:: /assets/images/vram_step1.png
    :width: 600
+   :align: center
    :alt: Step 1 - Default Column Options
 
 .. image:: /assets/images/vram_columnOptions.png
    :width: 600
+   :align: center
    :alt: Column Options
 
 Export
@@ -129,6 +131,7 @@ Click to export. The exported file can now be imported to C-PAT.
 
 .. image:: /assets/images/vram_step2.png
    :width: 600
+   :align: center
    :alt: Step 2 - Export
 
 
