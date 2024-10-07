@@ -117,14 +117,12 @@ Column Options
 .. image:: /assets/images/vram_step1.png
    :width: 600
    :show_caption: True
-   :align: center
    :alt: Step 1 - Default Column Options
    :title: Step 1 - Default Column Options
 
 .. image:: /assets/images/vram_columnOptions.png
    :width: 600
    :show_caption: True
-   :align: center
    :alt: Step 1.1 - Column Options
    :title: Step 1.1 - Column Options
 
@@ -136,7 +134,6 @@ Click to export. The exported file can now be imported to C-PAT.
 .. image:: /assets/images/vram_step2.png
    :width: 600
    :show_caption: True
-   :align: center
    :alt: Step 2 - Export
    :title: Step 2 - Export
 
@@ -144,7 +141,7 @@ Click to export. The exported file can now be imported to C-PAT.
 Nessus Plugin Mapping
 ---------------------
 
-The 'MAP PLUGINS TO IAV' button will initiate the process of mapping IAV data to Tenable plugin IDs. This is an intensive operation that queries the Tenable analysis endpoint to return and plugins with a cross reference[xref] for IAV items from 1990 to present. ``IAVA|20*,IAVB|20*,IAVT|20*,IAVA|199*,IAVB|199*,IAVT|199*``
+The 'MAP PLUGINS TO IAV' button will initiate the process of mapping IAV data to Tenable plugin IDs. This is an intensive operation that queries the Tenable analysis endpoint to return any plugins with a cross reference[xref] for IAV items from 1990 to present. ``IAVA|20*,IAVB|20*,IAVT|20*,IAVA|199*,IAVB|199*,IAVT|199*``
 
 .. note::
    This process will take approximately 60 seconds to complete. Clicking away from the page will terminate the mapping and the process must be started over again.
@@ -152,13 +149,13 @@ The 'MAP PLUGINS TO IAV' button will initiate the process of mapping IAV data to
 
 
 Set A&A Packages
-########################################
+----------------
 
 Set A&A Packages
 
 
 
 Set Assigned Teams
-########################################
+------------------
 
 Set Assigned Teams
