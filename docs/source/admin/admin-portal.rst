@@ -103,13 +103,11 @@ The STIG Manager and Tenable Import components streamline the process of creatin
 VRAM IAV Import
 ---------------
 
-VRAM IAV Export
-^^^^^^^^^^^^^^^
-
 The VRAM IAV Table can be accessed `here <https://vram.navy.mil/iav>`_.
 
-Set Default Column Options
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Column Options
+^^^^^^^^^^^^^^
 .. note::
    C-PAT is configured to automatically parse the required columns by name, therefore, the default column selections are only a minimum requirement. Additional columns or different column orders in the export are permissible.
    At a minimum, the following fields ARE required: ``IAV``, ``Status``, ``Title``, ``IAV CAT``, ``Type``, ``Release Date``, ``Navy Comply Date``, ``Superseded By``, ``Known Exploits``, ``Known DoD Incidents``, ``Nessus Plugins``.
