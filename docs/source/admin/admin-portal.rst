@@ -103,14 +103,16 @@ The STIG Manager and Tenable Import components streamline the process of creatin
 VRAM IAV Import
 ---------------
 
-The VRAM IAV Table can be accessed `here <https://vram.navy.mil/iav>`_.
+Importing a current VRAM IAV Table into C-PAT is the first step of a two part process as it relates to corelating Navy Comply Dates with Tenable vulnerability findings or plugin IDs. The VRAM IAV Table can be accessed and exported `here <https://vram.navy.mil/iav>`_.
 
+.. note::
+   C-PAT will automatically process the date information is current as of, contained in cell ``A1`` of the VRAM IAV export. All subsequent uploads will compare this date when a new file is uploaded.
 
 Column Options
 ^^^^^^^^^^^^^^
 .. note::
    C-PAT is configured to automatically parse the required columns by name, therefore, the default column selections are only a minimum requirement. Additional columns or different column orders in the export are permissible.
-   At a minimum, the following fields ARE required: ``IAV``, ``Status``, ``Title``, ``IAV CAT``, ``Type``, ``Release Date``, ``Navy Comply Date``, ``Superseded By``, ``Known Exploits``, ``Known DoD Incidents``, ``Nessus Plugins``.
+   At a minimum, the following fields ARE required: ``IAV`` ``Status`` ``Title`` ``IAV CAT`` ``Type`` ``Release Date`` ``Navy Comply Date`` ``Superseded By`` ``Known Exploits`` ``Known DoD Incidents`` ``Nessus Plugins``
 
 .. image:: /assets/images/vram_step1.png
    :width: 600
@@ -123,7 +125,7 @@ Column Options
 Export
 ^^^^^^
 
-Click to export. The exported file can be imported to C-PAT directly below.
+Click to export. The exported file can now be imported to C-PAT.
 
 .. image:: /assets/images/vram_step2.png
    :width: 600
@@ -134,9 +136,11 @@ Click to export. The exported file can be imported to C-PAT directly below.
 
 
 Nessus Plugin Mapping
-########################################
+---------------------
 
-Nessus Plugin Mapping
+The 'MAP PLUGINS TO IAV' button will initiate the process of mapping IAV data to Tenable plugin IDs.
+.. note::
+   This process will take approximately 60 seconds to complete. Clicking away from the page will terminate the mapping and the process must be started over again.
 
 
 
