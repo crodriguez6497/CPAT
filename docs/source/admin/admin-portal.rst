@@ -116,19 +116,15 @@ Column Options
 
 .. image:: /assets/images/vram_step1.png
    :width: 600
+   :show_caption: True
    :align: center
    :alt: Step 1 - Default Column Options
 
-.. raw:: html
-   <div style="margin-bottom: 10px;"></div>
-
 .. image:: /assets/images/vram_columnOptions.png
    :width: 600
+   :show_caption: True
    :align: center
    :alt: Column Options
-
-.. raw:: html
-   <div style="margin-bottom: 20px;"></div>
 
 Export
 ^^^^^^
@@ -137,11 +133,10 @@ Click to export. The exported file can now be imported to C-PAT.
 
 .. image:: /assets/images/vram_step2.png
    :width: 600
+   :show_caption: True
    :align: center
    :alt: Step 2 - Export
 
-.. raw:: html
-   <div style="margin-bottom: 20px;"></div>
 
 Nessus Plugin Mapping
 ---------------------
