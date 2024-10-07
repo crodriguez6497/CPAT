@@ -117,14 +117,14 @@ Column Options
 .. image:: /assets/images/vram_step1.png
    :width: 600
    :show_caption: True
-   :alt: Step 1 - Default Column Options
-   :title: Step 1 - Default Column Options
+   :alt: Step 1 - Locate Column Options
+   :title: Step 1 - Locate Column Options
 
 .. image:: /assets/images/vram_columnOptions.png
    :width: 600
    :show_caption: True
-   :alt: Step 1.1 - Column Options
-   :title: Step 1.1 - Column Options
+   :alt: Step 1.1 - Set Column Options (If necessary)
+   :title: Step 1.1 - Set Column Options (If necessary)
 
 Export
 ^^^^^^
