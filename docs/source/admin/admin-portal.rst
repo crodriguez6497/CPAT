@@ -1,7 +1,7 @@
 .. _admin-portal:
 
 Administration Portal
-=====================
+---------------------
 
 The Admin Portal is a centralized interface for managing C-PAT. It provides a way to manage users, collections, integrations, and fine-tune options that best align with individual organizational policies and operations.
 
@@ -123,8 +123,8 @@ Column Options
 .. image:: /assets/images/vram_columnOptions.png
    :width: 600
    :show_caption: True
-   :alt: Step 1.1 - Set Column Options (If necessary)
-   :title: Step 1.1 - Set Column Options (If necessary)
+   :alt: Step 1.1 - Set Column Options (if necessary)
+   :title: Step 1.1 - Set Column Options (if necessary)
 
 Export
 ^^^^^^
@@ -158,4 +158,4 @@ C-PAT provides the ability for administrators to set A&A package options for the
 Set Assigned Teams
 ------------------
 
-Similar to the Set A&A Packages component, the Set Assigned Teams component allows administrators to set a list of teams that can be assigned within POAMs. The teams entered in the Set Assigned Teams component will populate a drop down list of options in POAMs (Step 1 -  *Assignees*, Step 8 - *Milestones*, and within the POAM Extension milestones section).
+Similar to the Set A&A Packages component, the Set Assigned Teams component allows administrators to set a list of teams that can be assigned within POAMs. The teams entered in the Set Assigned Teams component will populate a drop down list of options in POAMs (Step 1 -  *Assignees*, Step 8 - *Milestones*, and within the *POAM Extension milestones* section).
