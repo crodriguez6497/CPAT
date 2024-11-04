@@ -16,4 +16,5 @@ These pages describe the features contained in C-PAT.
 	:caption: Contents:
 
 	manage-poams
+	stigman
 
