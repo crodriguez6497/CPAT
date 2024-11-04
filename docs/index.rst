@@ -14,4 +14,5 @@ C-PAT is an API and web client currently being developed through Naval Surface W
 
 	source/install/index
 	source/admin/index
+	source/user/index
 

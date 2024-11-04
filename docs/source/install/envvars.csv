@@ -1,9 +1,9 @@
 "Variable","Description","Affects"
 "CPAT_API_ADDRESS","| **Default** ``127.0.0.1``
 | The IP address on which the the API server will listen ","API"
-"CPAT_API_MAX_JSON_BODY","| **Default** ``20971520``
+"CPAT_API_MAX_JSON_BODY","| **Default** ``52428800``
 | The maximum size in bytes of the request body when Content-Type is application/json","API"
-"CPAT_API_MAX_UPLOAD","| **Default** ``262144000``
+"CPAT_API_MAX_UPLOAD","| **Default** ``52428800``
 | The maximum size in bytes of the file uploaded with Content-Type multipart/form-data","API"
 "CPAT_API_RATE_LIMIT","| **Default** ``1000``
 | API rate limit per 15 minutes","API"

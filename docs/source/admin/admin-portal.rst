@@ -3,9 +3,7 @@
 Administration Portal
 ---------------------
 
-The Admin Portal is a centralized interface for managing C-PAT. It provides a way to manage users, collections, integrations, and fine-tune options that best align with individual organizational policies and operations.
-
-The Admin Portal is accessible to users with the ``admin`` role assigned by the OIDC provider and subsequently provided to C-PAT via the user's token. Users whose token contains the admin role will automatically be presented with an "Admin Portal" button in the side menu bar.
+The Admin Portal is accessible to users with the ``admin`` role assigned by the OIDC provider and subsequently provided to C-PAT via the user's token. Users whose token contains the admin role will automatically be presented with an "Admin Portal" button in the side menu bar. The Admin Portal provides a way to manage users, collections, integrations, and fine-tune options that best align with particular organizational policies and operations.
 
 User Management
 ---------------
