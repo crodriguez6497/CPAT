@@ -27,7 +27,7 @@ Assigned Grid
 The Assigned Grid is a table that displays POAMs segmented into one of four seperate categories; All POAMs, Needs Attention, My POAMs, and Pending Approval.
 
 .. note::
-   The tabs contained within the Assigned Grid are access based, meaning, to see all 4 tabs, a user must have the appropriate permissions.
+   The tabs contained within the Assigned Grid are displayed based upon a users assigned permissions within a collection. To see all 4 tabs, a user must be assigned to an access level 3 or higher (Approver).
 
 
 All POAMs
