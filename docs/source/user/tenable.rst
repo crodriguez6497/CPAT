@@ -85,6 +85,8 @@ The IAV Vulnerabilities Component displays a table originated from Tenable's vul
 
 When the IAV vulnerability table is initially displayed, the component will show columns for the following fields by default: ``POAM`` ``Plugin ID`` ``Name`` ``Family`` ``Severity`` ``VPR`` ``IAV`` ``Navy Comply Date`` ``Superseded By`` ``Total`` ``Host Total``
 
+While similar to the main vulnerabilities view, the IAV Vulnerabilities Component loads the entire dataset and enables local column filtering rather than Tenable sever side filtering. This change allows for ``POAM`` ``IAV`` ``Navy Comply Date`` filtering in either the Vulnerability List view or the Vulnerability Summary view.
+
 To access the filter menu, several controls are available in the toolbar:
 1. A global search input field for filtering across all columns
 2. A filter button that provides access to a Navy Comply Date dropdown with the following pre-made filters:
