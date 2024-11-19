@@ -116,11 +116,3 @@ List View
 """""""""
 Expands to show additional columns:
 ``IP Address`` ``ACR`` ``AES`` ``NetBIOS`` ``DNS`` ``MAC Address`` ``Port`` ``Protocol`` ``Agent ID`` ``Host ID``
-
-Each vulnerability row displays a POAM status indicator with the following color coding:
-
-- Maroon: No POAM, Expired, Rejected, or Draft status
-- Gold: Submitted, Pending CAT-I Approval, or Extension Requested status
-- Black: False-Positive or Closed status
-- Green: Approved status
-- Gray: Associated status
