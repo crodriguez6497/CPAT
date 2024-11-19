@@ -141,3 +141,57 @@ List View
 '''''''''
 Expands to show additional columns:
 ``IP Address`` ``ACR`` ``AES`` ``NetBIOS`` ``DNS`` ``MAC Address`` ``Port`` ``Protocol`` ``Agent ID`` ``Host ID``
+
+Solutions Component
+^^^^^^^^^^^^^^^^^
+
+The Solutions Component provides a table view of solutions from Tenable, sorted by risk reduction percentage. The component automatically applies a filter for the repository that the user is currently viewing.
+
+Default Display
+"""""""""""""
+The solutions table displays the following columns by default:
+
+``Solution`` ``Risk Reduction`` ``Hosts Affected`` ``Vulnerabilities`` ``VPR`` ``CVSS v3 Base Score``
+
+Toolbar Controls
+""""""""""""""
+The toolbar provides several controls:
+
+1. A global search input field for filtering across all columns
+2. A clear filter button to reset all filters
+3. An export button for downloading the data as CSV
+
+Filtering Capabilities
+""""""""""""""""""""
+Each column supports individual filtering. Available filter types include:
+
+* Text filtering for ``Solution``
+* Numeric filtering for:
+   - ``Risk Reduction`` (percentage)
+   - ``Hosts Affected`` (count)
+   - ``Vulnerabilities`` (count)
+   - ``VPR`` (score)
+   - ``CVSS v3 Base Score`` (score)
+
+Solution Details Dialog
+"""""""""""""""""""""
+Clicking a solution row opens a detailed view with three main sections:
+
+1. Solution Summary Statistics
+   - Hosts Affected count
+   - Total Vulnerabilities
+   - VPR Score
+   - CVSS v3 Base Score
+
+2. Vulnerabilities Table
+   Shows all vulnerabilities addressed by the solution with columns:
+   ``Plugin ID`` ``VPR`` ``CVSS V3`` ``Host Total``
+
+3. Affected Hosts Table
+   Lists all hosts requiring the solution with columns:
+   ``IP Address`` ``NetBIOS`` ``DNS`` ``OS CPE`` ``Repository``
+
+The dialog provides separate search and filtering capabilities for both the vulnerabilities and affected hosts tables.
+
+.. note::
+   All data is automatically filtered based on the user's current repository. The solutions are sorted by default using the Risk Reduction percentage in descending order to highlight the most impactful remediation actions.
