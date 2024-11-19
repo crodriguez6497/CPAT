@@ -10,7 +10,7 @@ Main Vulnerabilities Component
 The Main Vulnerabilities Component will display a table originating from Tenable's Vulnerabilities Summary (API tool ``sumid``) with filters to exclude "Informational" severity and include only items where the vulnerability was observed within the last 30 days by default.
 When the Vulnerability Summary view is selected, the component will display columns for the following fields: ``POAM`` ``Plugin ID`` ``Name`` ``Family`` ``Severity`` ``VPR`` ``IAV`` ``Navy Comply Date`` ``Total`` ``Host Total``
 
-To access the filter menu, a [colored] filter button is available to the top left of the table. At the top of the filter panel, a dropdown has been provided with several pre-made filters.
+To access the filter menu, a filter button is available to the top left of the table. At the top of the filter panel, a dropdown has been provided with several pre-made filters at the top of the filter panel.
 
 .. list-table:: Tenable Predefined Filters
    :widths: 30 70
@@ -66,13 +66,17 @@ To access the filter menu, a [colored] filter button is available to the top lef
 
 Additional filters are available for the following items: ``ACR`` ``AES`` ``AES Severity`` ``Accept Risk`` ``Address`` ``Agent ID`` ``Application CPE`` ``Assets`` ``Audit File`` ``CCE ID`` ``Cross References`` ``CVE ID`` ``CVSS v2 Score`` ``CVSS v2 Vector`` ``CVSS v3 Score`` ``CVSS v3 Vector`` ``Data Format`` ``DNS Name`` ``Exploit Available`` ``Exploit Frameworks`` ``Host ID`` ``IAVM ID`` ``MS Bulletin ID`` ``Mitigated`` ``NetBIOS Name`` ``Patch Published`` ``Plugin Family`` ``Plugin ID`` ``Plugin Modified`` ``Plugin Name`` ``Plugin Published`` ``Plugin Type`` ``Port`` ``Protocol`` ``Recast Risk`` ``STIG Severity`` ``Scan Policy Plugins`` ``Severity`` ``Users`` ``Vulnerability Discovered`` ``Vulnerability Last Observed`` ``Vulnerability Priority Rating`` ``Vulnerability Published`` ``Vulnerability Text`` ``Vulnerability Type``
 
-Additionally, local filters are available for the following items when the Vulnerability Summary view is selected: ``POAM`` ``IAV`` ``Navy Comply Date``
+Additionally, column filters are available for the following items when the Vulnerability Summary view is selected: ``POAM`` ``IAV`` ``Navy Comply Date``
 
 .. note::
-   Because of the potential for large amounts of data to be returned, Tenable server side pagination and server side filtering are used to limit the amount of data returned to the client when Vulnerability List view is selected in the main vulnerabilities component. Local filtering for POAM, IAV, and Navy Comply Date are only available when the Vulnerability Summary view is selected. All external filters are available in both views.
+   Because of the potential for large amounts of data to be returned, Tenable server side pagination and server side filtering are used to limit the amount of data returned to the client when Vulnerability List view is selected in the main vulnerabilities component. Local filtering for POAM, IAV, and Navy Comply Date are only available when the Vulnerability Summary view is selected. All externally processed filters (filter panel items) are available in both views.
 
 
-The main vulnerabilites component has been configured 
+To navigate between Vulnerability Summary (API Tool ``sumid``) and Vulnerability List (API Tool ``listvuln``) a user has two options. 
+A button has been provided adjacent to the filtering buttons and can be identified by the magnifying glass icon that will change the vulnerability view. Alternatively, a user can click the row of a particular vulnerability which will apply a filter for the selected plugin ID and change to Vulnerability List view.
+
+In cases where the view is changed to the Vulnerability List View, the columns will be expanded to display the additional fields ``IP Address`` ``ACR`` ``AES`` ``NewBIOS`` ``DNS`` ``MAC Address`` ``Port`` ``Protocol`` ``Agent ID`` ``Host ID``
+In cases where the view is changed to the Vulnerability Summary view, the columns will be reduced and instead display the ``Total`` and ``Host Total`` columns.
 
 IAV Vulnerabilities Component
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
