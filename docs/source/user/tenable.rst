@@ -13,7 +13,6 @@ The Main Vulnerabilities Component will display a table originating from Tenable
 Default Display
 """""""""""""
 When the Vulnerability Summary view is selected, the component will display columns for the following fields:
-
 ``POAM`` ``Plugin ID`` ``Name`` ``Family`` ``Severity`` ``VPR`` ``IAV`` ``Navy Comply Date`` ``Total`` ``Host Total``
 
 Predefined Filters
@@ -73,12 +72,10 @@ To access the filter menu, a filter button is available to the top left of the t
 
 Additional Filters
 """"""""""""""""
-Additional filters are available for the following items:
-
+Additional filters are available for the following items inside of the main filter panel:
 ``ACR`` ``AES`` ``AES Severity`` ``Accept Risk`` ``Address`` ``Agent ID`` ``Application CPE`` ``Assets`` ``Audit File`` ``CCE ID`` ``Cross References`` ``CVE ID`` ``CVSS v2 Score`` ``CVSS v2 Vector`` ``CVSS v3 Score`` ``CVSS v3 Vector`` ``Data Format`` ``DNS Name`` ``Exploit Available`` ``Exploit Frameworks`` ``Host ID`` ``IAVM ID`` ``MS Bulletin ID`` ``Mitigated`` ``NetBIOS Name`` ``Patch Published`` ``Plugin Family`` ``Plugin ID`` ``Plugin Modified`` ``Plugin Name`` ``Plugin Published`` ``Plugin Type`` ``Port`` ``Protocol`` ``Recast Risk`` ``STIG Severity`` ``Scan Policy Plugins`` ``Severity`` ``Users`` ``Vulnerability Discovered`` ``Vulnerability Last Observed`` ``Vulnerability Priority Rating`` ``Vulnerability Published`` ``Vulnerability Text`` ``Vulnerability Type``
 
-Additionally, column filters are available for the following items when the Vulnerability Summary view is selected:
-
+Column filters are available for the following items when the Vulnerability Summary view is selected:
 ``POAM`` ``IAV`` ``Navy Comply Date``
 
 .. note::
@@ -87,16 +84,15 @@ Additionally, column filters are available for the following items when the Vuln
 View Navigation
 """""""""""""
 To navigate between Vulnerability Summary (API Tool ``sumid``) and Vulnerability List (API Tool ``listvuln``) a user has two options:
-
 1. A button has been provided adjacent to the filtering buttons and can be identified by the magnifying glass icon that will change the vulnerability view
-2. Click the row of a particular vulnerability which will apply a filter for the selected plugin ID and change to Vulnerability List view
+2. Clicking the row of a particular vulnerability will apply a filter for the selected plugin ID and change to Vulnerability List view
 
 View Specific Columns
 """""""""""""""""""
-Vulnerability List View adds the following columns:
+Vulnerability List View adds the following additional columns:
 ``IP Address`` ``ACR`` ``AES`` ``NewBIOS`` ``DNS`` ``MAC Address`` ``Port`` ``Protocol`` ``Agent ID`` ``Host ID``
 
-Vulnerability Summary View displays:
+Vulnerability Summary View adds the following additional columns:
 ``Total`` ``Host Total``
 
 IAV Vulnerabilities Component
@@ -107,7 +103,6 @@ The IAV Vulnerabilities Component displays a table originated from Tenable's vul
 Default Display
 """""""""""""
 When the IAV vulnerability table is initially displayed, the component will show columns for the following fields by default:
-
 ``POAM`` ``Plugin ID`` ``Name`` ``Family`` ``Severity`` ``VPR`` ``IAV`` ``Navy Comply Date`` ``Superseded By`` ``Total`` ``Host Total``
 
 .. note::
@@ -116,7 +111,6 @@ When the IAV vulnerability table is initially displayed, the component will show
 Toolbar Controls
 """"""""""""""
 To access the filter menu, several controls are available in the toolbar:
-
 1. A global search input field for filtering across all columns
 2. A filter button that provides access to a Navy Comply Date dropdown with the following pre-made filters:
 
@@ -146,5 +140,4 @@ Includes ``Total`` and ``Host Total`` columns.
 List View
 '''''''''
 Expands to show additional columns:
-
 ``IP Address`` ``ACR`` ``AES`` ``NetBIOS`` ``DNS`` ``MAC Address`` ``Port`` ``Protocol`` ``Agent ID`` ``Host ID``
