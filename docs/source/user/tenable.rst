@@ -11,6 +11,7 @@ The Main Vulnerabilities Component will display a table originating from Tenable
 When the Vulnerability Summary view is selected, the component will display columns for the following fields: ``POAM`` ``Plugin ID`` ``Name`` ``Family`` ``Severity`` ``VPR`` ``IAV`` ``Navy Comply Date`` ``Total`` ``Host Total``
 
 To access the filter menu, a [colored] filter button is available to the top left of the table. At the top of the filter panel, a dropdown has been provided with several pre-made filters.
+
 .. list-table:: Tenable Predefined Filters
    :widths: 30 70
    :header-rows: 1
@@ -61,6 +62,8 @@ To access the filter menu, a [colored] filter button is available to the top lef
      - | pluginFamily = [1, 14]
        | vulnerabilityLastObserved = 0:30
        | severity = [1, 2, 3, 4]
+       
+
 Additional filters are available for the following items: ``ACR`` ``AES`` ``AES Severity`` ``Accept Risk`` ``Address`` ``Agent ID`` ``Application CPE`` ``Assets`` ``Audit File`` ``CCE ID`` ``Cross References`` ``CVE ID`` ``CVSS v2 Score`` ``CVSS v2 Vector`` ``CVSS v3 Score`` ``CVSS v3 Vector`` ``Data Format`` ``DNS Name`` ``Exploit Available`` ``Exploit Frameworks`` ``Host ID`` ``IAVM ID`` ``MS Bulletin ID`` ``Mitigated`` ``NetBIOS Name`` ``Patch Published`` ``Plugin Family`` ``Plugin ID`` ``Plugin Modified`` ``Plugin Name`` ``Plugin Published`` ``Plugin Type`` ``Port`` ``Protocol`` ``Recast Risk`` ``STIG Severity`` ``Scan Policy Plugins`` ``Severity`` ``Users`` ``Vulnerability Discovered`` ``Vulnerability Last Observed`` ``Vulnerability Priority Rating`` ``Vulnerability Published`` ``Vulnerability Text`` ``Vulnerability Type``
 
 Additionally, local filters are available for the following items when the Vulnerability Summary view is selected: ``POAM`` ``IAV`` ``Navy Comply Date``
