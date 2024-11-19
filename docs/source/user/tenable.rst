@@ -79,4 +79,46 @@ In cases where the view is changed to the Vulnerability List View, the columns w
 In cases where the view is changed to the Vulnerability Summary view, the columns will be reduced and instead display the ``Total`` and ``Host Total`` columns.
 
 IAV Vulnerabilities Component
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The IAV Vulnerabilities Component displays a table originated from Tenable's vulnerability summary with filters to only return Plugin ID's that are mapped to an IAV #, exclude "Informational" severity, and exclude items that have been superseded by other vulnerabilities.
+
+When the IAV vulnerability table is initially displayed, the component will show columns for the following fields by default: ``POAM`` ``Plugin ID`` ``Name`` ``Family`` ``Severity`` ``VPR`` ``IAV`` ``Navy Comply Date`` ``Superseded By`` ``Total`` ``Host Total``
+
+To access the filter menu, several controls are available in the toolbar:
+1. A global search input field for filtering across all columns
+2. A filter button that provides access to a Navy Comply Date dropdown with the following pre-made filters:
+
+   - All Overdue
+   - 90+ Days Overdue
+   - 30-90 Days Overdue
+   - 0-30 Days Overdue
+   - 0-14 Days Overdue
+   - 0-7 Days Overdue
+   - Due Within 7 Days
+   - Due Within 14 Days
+   - Due Within 30 Days
+   - Due Within 90 Days
+
+3. A clear filter button to reset to default filters
+4. A view toggle button to switch between Summary and List views
+5. A column selector to customize visible columns
+
+The component has two primary views:
+
+Summary View
+"""""""""""
+Includes ``Total`` and ``Host Total`` columns.
+
+List View
+"""""""""
+Expands to show additional columns:
+``IP Address`` ``ACR`` ``AES`` ``NetBIOS`` ``DNS`` ``MAC Address`` ``Port`` ``Protocol`` ``Agent ID`` ``Host ID``
+
+Each vulnerability row displays a POAM status indicator with the following color coding:
+
+- Maroon: No POAM, Expired, Rejected, or Draft status
+- Gold: Submitted, Pending CAT-I Approval, or Extension Requested status
+- Black: False-Positive or Closed status
+- Green: Approved status
+- Gray: Associated status
