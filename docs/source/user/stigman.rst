@@ -30,11 +30,3 @@ By default, the Scheduled Completion Date will be set to 30 days for CAT I (High
 
 .. note::
    If appropriately configured in the Administrative Portal, the A&A Package and Approver fields will also be auto-populated with the appropriate data.
-
-
-
-
-Findings Chart
-^^^^^^^^^^^^^^^^^^
-
-The STIG Manager findings chart is a visual representation of the data displayed in the Findings Grid. The chart displays the number of findings by severity. The chart is interactive and allows the user to filter on either POAM Existence or POAM Status through the use of the dropdown located below the chart.
