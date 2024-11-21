@@ -136,7 +136,6 @@ Severity Mapping
 
 Milestone Formatting
 ^^^^^^^^^^^^^^^^^^^^
-
 Milestones are formatted in two distinct sections:
 
 Comments (Column J)
@@ -168,12 +167,10 @@ Special Handling
 
 Vulnerability Source
 ~~~~~~~~~~~~~~~~~~~~~
-
 * **STIG**: Formatted as {STIG TITLE} :: {Revision} Benchmark Date: {Last Revision Date}
 * **ACAS**: Plugin Name
 
 Status Mapping
 ~~~~~~~~~~~~~~~
-
 * **Closed**: Mapped to "Completed"
 * **Others**: Mapped to "Ongoing"
