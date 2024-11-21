@@ -10,8 +10,8 @@ Field Mappings
 The following table shows the mapping between Excel columns and POAM data fields:
 
 .. list-table:: POAM Field Mappings
-   :header-rows: 1
-   :widths: 10 20 70
+  :widths: 10 20 70
+  :header-rows: 1
 
    * - Column
      - Source Field
@@ -67,6 +67,7 @@ The following table shows the mapping between Excel columns and POAM data fields
    * - AA
      - adjSeverity
      - Mapped adjusted severity
+
 
 Default Values
 -------------
