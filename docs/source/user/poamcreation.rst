@@ -54,7 +54,6 @@ Field Definitions
 ^^^^^^^^^^^^^^^^^
 
 POAM Status
-
    * Draft - Initial state
    * Submitted
    * Pending CAT-I Approval
