@@ -1,6 +1,7 @@
 ﻿POAM Exporting
 --------------
 
+C-PAT contains the ability to export into the standard eMASS excel format. Listed below are the applicable field mappings for STIG and ACAS originated POAMs.
 .. note::
    Draft POAMs are not exported.
 
