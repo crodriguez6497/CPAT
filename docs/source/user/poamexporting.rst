@@ -196,7 +196,6 @@ Impact Description
 * Appended to CCI field when present
 
 .. seealso::
-
    * :ref:`poam-creation`
    * :ref:`poam-management`
    * :ref:`export-templates`
