@@ -11,59 +11,83 @@ The following table shows the mapping between Excel columns and POAM data fields
    :header-rows: 1
 
    * - Column
-     - Source Field
-     - Notes
+     - eMASS Column Title
+     - C-PAT Mapped Field
    * - C
-     - description
-     - Raw description
+     - Control Vulnerability Description
+     - Description
    * - D
-     - controlAPs
-     - Default: "CM-6.5"
+     - Controls / APs
+     - Controls / APs (Handeled behind the scenes)
    * - E
-     - officeOrg
-     - Organization
+     - Office/Org
+     - Exporting user's Office/Org, Full Name, Email.
    * - F
-     - vulnerabilityId
-     - Identifier
+     - Security Checks
+     - Source Identifying Control Vulnerability - ID #:
    * - G
-     - requiredResources
-     - Resource requirements
+     - Resources Required
+     - Required Resources
    * - H
-     - scheduledCompletionDate
-     - Format: MM/dd/yyyy
-   * - I-K
-     - milestones
-     - Formatted milestone data
+     - Scheduled Completion Date
+     - Scheduled Completion Date
+   * - I
+     - Milestone ID
+     - 1 - (Handeled behind the scenes)
+   * - J
+     - Milestone with Completion Dates
+     - Formatted milestone data (See below for milestone formatting details)
+   * - K
+     - Milestone Changes
+     - Formatted milestone change data (See below for milestone formatting details)
    * - L
-     - vulnerabilitySource
-     - Special formatting rules
+     - Source Identifying Vulnerability 
+     - Special formatting rules (See below for Special formatting rules)
    * - M
-     - status
-     - "Completed" or "Ongoing"
+     - Status
+     - Special formatting rules (See below for Special formatting rules)
    * - N
-     - cci
-     - Prefixed with "CCI-"
-   * - O, S
-     - rawSeverity
-     - Mapped severity value
+     - Comments
+     - Special formatting rules (See below for Special formatting rules)
+   * - O
+     - Raw Severity
+     - Raw Severity
    * - P
-     - devicesAffected
-     - Affected system list
+     - Devices Affected
+     - Affected assets list
    * - Q
-     - mitigations
-     - Mitigation steps
+     - Mitigations (in-house and in conjunction with the Navy CSSP)
+     - Mitigations
    * - R
-     - predisposingConditions
-     - Conditions list
+     - Predisposing Conditions
+     - Predisposing Conditions
+   * - S
+     - Severity
+     - Raw Severity
+   * - T
+     - Relevance of Threat
+     - Default value, see below.
+   * - U
+     - Threat Description
+     - Default value, see below.
    * - V
-     - likelihood
-     - Risk likelihood
+     - Likelihood
+     - Likelihood
+   * - W
+     - Impact
+     - Default value, see below.
+   * - X
+     - Impact Description
+     - Impact Description
    * - Y
-     - residualRisk
-     - Remaining risk assessment
+     - Residual Risk Level
+     - Residual Risk
+   * - Z
+     - Recommendations
+     - Default value, see below.
    * - AA
-     - adjSeverity
-     - Mapped adjusted severity
+     - Resulting Residual Risk after Proposed Mitigations
+     - Adjusted Severity
 
 Default Values
 ^^^^^^^^^^^^^^^
@@ -135,7 +159,7 @@ Changes (Column K)
 
 .. note::
 
-   Column I contains "1" if comments exist, empty otherwise
+   Column I contains "1" if comments exist, otherwise the column remains empty.
 
 Export Process Details
 --------------------
