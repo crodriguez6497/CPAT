@@ -7,9 +7,9 @@ Manual POAM Entry
 ^^^^^^^^^^^^^^^^
 While not recommended, POAMs can be created manually:
 
-1. All fields must be entered by the user
-2. Assets must be selected manually from the collection's asset list
-3. Requires more validation and verification
+   1. All fields must be entered by the user
+   2. Assets must be selected manually from the collection's asset list
+   3. Requires more validation and verification
 
 STIG Manager Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^
