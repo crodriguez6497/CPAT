@@ -16,6 +16,7 @@ STIG Manager Integration
 When creating a POAM from STIG Manager findings:
 
 1. C-PAT automatically populates:
+
    * Description from STIG check
    * Vulnerability Source (set to "STIG")
    * STIG Title and Benchmark ID
@@ -24,6 +25,7 @@ When creating a POAM from STIG Manager findings:
    * Scheduled completion date (calculated based on severity)
 
 2. Asset Management:
+
    * The Assets tab displays a live feed of affected assets from STIG Manager
    * Assets are automatically updated based on the current state in STIG Manager
    * Assets cannot be manually added/removed as they are managed by STIG Manager
