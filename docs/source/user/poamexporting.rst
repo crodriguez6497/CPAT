@@ -95,6 +95,7 @@ Default Values
 The following default values are always applied:
 
 .. code-block:: none
+
    Column T (Relevance of Threat): "High"
    Column U (Threat Description): "ADVERSARIAL - HIGH: Per table D-2 Taxonomy of Threat Sources lists ADVERSARIAL as individual (outsider, insider, trusted insider, privileged insider), therefore the Relevance of Threat defaults to HIGH."
    Column W (Impact): "High"
@@ -103,6 +104,7 @@ The following default values are always applied:
 When no CCI is provided, the following defaults are applied:
 
 .. code-block:: none
+
    Column D (Controls / APs): "CM-6.5"
    Column N (Comments): "CCI-000366 Control mapping is unavailable for this vulnerability so it is being mapped to CM-6.5 CCI-000366 by default."
 
