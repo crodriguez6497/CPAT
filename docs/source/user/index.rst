@@ -16,6 +16,7 @@ These pages describe the features contained in C-PAT.
 	:caption: Contents:
 
 	poamcreation
+	poamexporting
 	manage-poams
 	stigman
 	tenable

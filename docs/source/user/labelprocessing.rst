@@ -7,7 +7,7 @@ The Label Processing component contains the functionality to add labels within a
 Labels can be added to a collection by selecting the "Add Label" button located beneath the labels table. This will open a modal window where the user can input a label name and description. Once the label is created, it will be added to the labels table and can be selected for use in the POAM workflow.
 
 To modify a label, a user has two options.
--1. Clicking the row of the label in the table.
--2. Selecting the label from the dropdown menu located below the table.
+   1. Clicking the row of the label in the table.
+   2. Selecting the label from the dropdown menu located below the table.
 
 Either option will open a pop-up form with the labels information. The user can modify the labels information and click "Save" to save the changes.

@@ -13,8 +13,8 @@ The local assets view contains a tabset with 2 tabs, Asset Management and Asset 
 The asset management tab displays a table of all assets in the collection with filterable columns for Asset ID, Asset Name, Description, IP Address, and MAC Address. To add an asset to the collection, click "Add Asset" and complete the pop-up form. After an asset is added, it will become an available option to select when manually adding assets to a POAM.
 
 To modify an asset, a user has two options.
--1. Clicking the row of the asset in the table.
--2. Selecting the asset from the dropdown menu located below the table.
+   1. Clicking the row of the asset in the table.
+   2. Selecting the asset from the dropdown menu located below the table.
 
 Either option will open a pop-up form with the asset's information. The user can modify the asset's information and click "Save" to save the changes.
 
