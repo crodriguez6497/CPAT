@@ -68,23 +68,23 @@ The following table shows the mapping between Excel columns and POAM data fields
 Default Values
 ^^^^^^^^^^^^^^^
 
-The following default values are applied to empty fields:
+The following default values are always applied:
 
 .. code-block:: none
-
-   Column T: "High"
-   Column W: "High"
-   Column U: "ADVERSARIAL - HIGH: Per table D-2 Taxonomy of Threat Sources lists ADVERSARIAL as individual (outsider, insider, trusted insider, privileged insider), therefore the Relevance of Threat defaults to HIGH."
-   Column Z: "After reviewing documentation, and interviewing system stakeholders, it has been determined that this vulnerability should be mitigated. The ISSO will continue to monitor this vulnerability, and update the POAM as necessary. See mitigations field for detailed mitigation information."
-
-CCI Default Values
-^^^^^^^^^^^^^^^^^^^
+   Column T (Relevance of Threat): "High"
+   Column U (Threat Description): "ADVERSARIAL - HIGH: Per table D-2 Taxonomy of Threat Sources lists ADVERSARIAL as individual (outsider, insider, trusted insider, privileged insider), therefore the Relevance of Threat defaults to HIGH."
+   Column W (Impact): "High"
+   Column Z (Recommendations): "After reviewing documentation, and interviewing system stakeholders, it has been determined that this vulnerability should be mitigated. The ISSO will continue to monitor this vulnerability, and update the POAM as necessary. See mitigations field for detailed mitigation information."
 
 When no CCI is provided, the following defaults are applied:
 
-* **controlAPs**: "CM-6.5"
-* **cci**: "CCI-000366"
-* **Note**: "Control mapping is unavailable for this vulnerability so it is being mapped to CM-6.5 CCI-000366 by default."
+.. code-block:: none
+   Column D (Controls / APs): "CM-6.5"
+   Column N (Comments): "CCI-000366 Control mapping is unavailable for this vulnerability so it is being mapped to CM-6.5 CCI-000366 by default."
+
+.. note::
+   The default CCI logic for exports is seperate from the CCI logic used throughout C-PAT. i.e. In STIG Manager, a query is made to ``/collections/{collectionId}/findings?aggregator=groupId&acceptedOnly=false&benchmarkId={benchmarkId}&projection=assets&projection=ccis`` and the CCI and AP Acronyms are pulled from the CCI projection. For Tenable, a query is made to ``plugin/{pluginId}``; if the plugin has a Patch Publication Date, the CCI is mapped to SI-2.9 / CCI-002605. If the plugin does not have a Patch Publication Date, the CCI is mapped to CM-6.5 / CCI-000366.
+   Only in the event that the CCI is not found, the default Controls / APs and Comments are applied.
 
 Severity Mapping
 ^^^^^^^^^^^^^^^^
