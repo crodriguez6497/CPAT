@@ -50,6 +50,7 @@ Field Definitions
 POAM Status
 ~~~~~~~~~~~
 Available statuses:
+
 * Draft - Initial state
 * Submitted
 * Pending CAT-I Approval
@@ -91,6 +92,7 @@ Predisposing Conditions
 Scheduled Completion Date
 ^^^^^^^^^^^^^^^^^^^^^^^
 "Scheduled Completion Date: Target completion date for resolving the vulnerability. This target completion date can stretch beyond the potential 3-year authorization window and must accurately reflect the resolution timetable. Please note that the initial date entered may not be changed. When a vulnerability severity value is resolved, the agency should note the actual completion date."
+
 .. note::
    POAM Scheduled Completion Date is automated based on the severity of the vulnerability. CAT I - Critical and CAT I - High: 30 days, CAT II - Medium: 180 days, CAT III - Low and CAT III - Informational: 365 days.
 
@@ -105,6 +107,7 @@ Milestones
 Residual Risk
 ^^^^^^^^^^^^
 "Residual Risk is automatically determined by the Adjusted Severity Value. If the Adjusted Severity Value is not present, the Residual Risk is determined by the Raw Severity."
+
 .. note::
    Residual Risk is calculated based on the Adjusted Severity Value. If the Adjusted Severity Value is not present, the Residual Risk is determined by the Raw Severity.
 
