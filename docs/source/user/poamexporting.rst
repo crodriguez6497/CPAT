@@ -2,7 +2,7 @@
 --------------
 
 Field Mappings
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 The following table shows the mapping between Excel columns and POAM data fields:
 
 .. list-table:: POAM Field Mappings
@@ -66,7 +66,7 @@ The following table shows the mapping between Excel columns and POAM data fields
 
 
 Default Values
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 
 The following default values are applied to empty fields:
 
@@ -78,7 +78,7 @@ The following default values are applied to empty fields:
    Column Z: "After reviewing documentation, and interviewing system stakeholders..."
 
 CCI Default Values
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 
 When no CCI is provided, the following defaults are applied:
 
