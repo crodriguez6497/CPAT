@@ -1,12 +1,8 @@
 ﻿POAM Exporting
-=============
-
-.. contents:: Table of Contents
-   :local:
-   :depth: 2
+--------------
 
 Field Mappings
--------------
+^^^^^^^^^^^^^^
 The following table shows the mapping between Excel columns and POAM data fields:
 
 .. list-table:: POAM Field Mappings
@@ -70,10 +66,7 @@ The following table shows the mapping between Excel columns and POAM data fields
 
 
 Default Values
--------------
-
-Standard Defaults
-~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 The following default values are applied to empty fields:
 
@@ -85,7 +78,7 @@ The following default values are applied to empty fields:
    Column Z: "After reviewing documentation, and interviewing system stakeholders..."
 
 CCI Default Values
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 When no CCI is provided, the following defaults are applied:
 
@@ -94,7 +87,7 @@ When no CCI is provided, the following defaults are applied:
 * **Note**: "Control mapping is unavailable..."
 
 Severity Mapping
---------------
+^^^^^^^^^^^^^^^^
 
 The following table shows how severity values are mapped:
 
@@ -116,7 +109,7 @@ The following table shows how severity values are mapped:
      - Very High
 
 Milestone Formatting
-------------------
+^^^^^^^^^^^^^^^^^^^^
 
 Milestones are formatted in two distinct sections:
 
