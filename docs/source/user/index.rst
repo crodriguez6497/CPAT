@@ -19,4 +19,5 @@ These pages describe the features contained in C-PAT.
 	stigman
 	tenable
 	assetprocessing
+	labelprocessing
 
