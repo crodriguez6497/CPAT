@@ -178,7 +178,3 @@ Status Mapping
 
 .. note::
    Draft POAMs are not exported.
-
-
-.. warning::
-   Ensure all required fields are populated before export to avoid unexpected default values in the exported document.
