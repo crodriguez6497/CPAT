@@ -75,8 +75,8 @@ The following default values are applied to empty fields:
 
    Column T: "High"
    Column W: "High"
-   Column U: "ADVERSARIAL - HIGH: Per table D-2 Taxonomy of Threat Sources..."
-   Column Z: "After reviewing documentation, and interviewing system stakeholders..."
+   Column U: "ADVERSARIAL - HIGH: Per table D-2 Taxonomy of Threat Sources lists ADVERSARIAL as individual (outsider, insider, trusted insider, privileged insider), therefore the Relevance of Threat defaults to HIGH."
+   Column Z: "After reviewing documentation, and interviewing system stakeholders, it has been determined that this vulnerability should be mitigated. The ISSO will continue to monitor this vulnerability, and update the POAM as necessary. See mitigations field for detailed mitigation information."
 
 CCI Default Values
 ^^^^^^^^^^^^^^^^^^^
@@ -85,7 +85,7 @@ When no CCI is provided, the following defaults are applied:
 
 * **controlAPs**: "CM-6.5"
 * **cci**: "CCI-000366"
-* **Note**: "Control mapping is unavailable..."
+* **Note**: "Control mapping is unavailable for this vulnerability so it is being mapped to CM-6.5 CCI-000366 by default."
 
 Severity Mapping
 ^^^^^^^^^^^^^^^^
