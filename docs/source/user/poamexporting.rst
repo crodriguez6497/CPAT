@@ -7,7 +7,6 @@
 
 Field Mappings
 -------------
-
 The following table shows the mapping between Excel columns and POAM data fields:
 
 .. list-table:: POAM Field Mappings
