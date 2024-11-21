@@ -51,7 +51,7 @@ The following table shows the mapping between Excel columns and POAM data fields
      - Special formatting rules (See below for Special formatting rules)
    * - O
      - Raw Severity
-     - Raw Severity
+     - Raw Severity (See below for mapping)
    * - P
      - Devices Affected
      - Affected assets list
@@ -63,7 +63,7 @@ The following table shows the mapping between Excel columns and POAM data fields
      - Predisposing Conditions
    * - S
      - Severity
-     - Raw Severity
+     - Raw Severity (See below for mapping)
    * - T
      - Relevance of Threat
      - Default value, see below.
@@ -87,7 +87,7 @@ The following table shows the mapping between Excel columns and POAM data fields
      - Default value, see below.
    * - AA
      - Resulting Residual Risk after Proposed Mitigations
-     - Adjusted Severity
+     - Adjusted Severity (See below for mapping)
 
 Default Values
 ^^^^^^^^^^^^^^^
@@ -187,6 +187,9 @@ Status Mapping
 * **Closed**: Mapped to "Completed"
 * **Others**: Mapped to "Ongoing"
 
+.. note::
+   Draft POAMs are not exported.
+
 Impact Description
 ^^^^^^^^^^^^^^^
 
@@ -199,5 +202,4 @@ Impact Description
    * :ref:`export-templates`
 
 .. warning::
-
    Ensure all required fields are populated before export to avoid unexpected default values in the exported document.
