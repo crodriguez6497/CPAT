@@ -1,6 +1,9 @@
 ﻿POAM Exporting
 --------------
 
+.. note::
+   Draft POAMs are not exported.
+
 Field Mappings
 ^^^^^^^^^^^^^^^
 The following table shows the mapping between Excel columns and POAM data fields:
@@ -175,6 +178,3 @@ Status Mapping
 
 * **Closed**: Mapped to "Completed"
 * **Others**: Mapped to "Ongoing"
-
-.. note::
-   Draft POAMs are not exported.
