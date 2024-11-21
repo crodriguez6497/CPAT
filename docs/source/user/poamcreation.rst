@@ -35,6 +35,7 @@ Tenable Integration
 When creating a POAM from Tenable findings:
 
 1. C-PAT automatically populates:
+
    * Description
    * Vulnerability Source (set to "ACAS")
    * Plugin ID
@@ -43,6 +44,7 @@ When creating a POAM from Tenable findings:
    * Scheduled completion date (calculated based on severity)
 
 2. Asset Management:
+
    * The Assets tab shows real-time affected assets from Tenable
    * Asset list updates automatically based on current Tenable data
    * Assets cannot be manually modified as they reflect live Tenable data
