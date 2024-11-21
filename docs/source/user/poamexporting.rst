@@ -7,8 +7,6 @@ C-PAT contains the ability to export into the standard eMASS excel format. Liste
 
 Field Mappings
 ^^^^^^^^^^^^^^^
-The following table shows the mapping between Excel columns and POAM data fields:
-
 
 .. list-table:: POAM Field Mappings
    :widths: 10 20 70
