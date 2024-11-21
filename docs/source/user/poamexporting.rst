@@ -165,12 +165,22 @@ Changes (Column K)
 Special Handling
 ^^^^^^^^^^^^^^^^
 
-Vulnerability Source
-~~~~~~~~~~~~~~~~~~~~~
+Vulnerability Source (Column L)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * **STIG**: Formatted as {STIG TITLE} :: {Revision} Benchmark Date: {Last Revision Date}
 * **ACAS**: Plugin Name
 
-Status Mapping
-~~~~~~~~~~~~~~~
+Status Mapping (Column M)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 * **Closed**: Mapped to "Completed"
 * **Others**: Mapped to "Ongoing"
+
+Comments Mapping (Column N)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+By default, comments are mapped to contain the following format:
+
+.. code-block:: none
+
+   CCI-{CCI #}
+   (AS APPLICABLE) "Control mapping is unavailable for this vulnerability so it is being mapped to CM-6.5 CCI-000366 by default."
+   "Local Site Impact: {Local Site Impact}"
