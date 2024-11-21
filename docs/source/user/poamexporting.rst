@@ -24,7 +24,7 @@ The following table shows the mapping between Excel columns and POAM data fields
      - Exporting user's Office/Org, Full Name, Email.
    * - F
      - Security Checks
-     - Source Identifying Control Vulnerability - ID #:
+     - Source Identifying Control Vulnerability - ID #
    * - G
      - Resources Required
      - Required Resources
@@ -33,7 +33,7 @@ The following table shows the mapping between Excel columns and POAM data fields
      - Scheduled Completion Date
    * - I
      - Milestone ID
-     - 1 - (Handeled behind the scenes)
+     - "1" (Handeled behind the scenes)
    * - J
      - Milestone with Completion Dates
      - Formatted milestone data (See below for milestone formatting details)
@@ -115,8 +115,6 @@ When no CCI is provided, the following defaults are applied:
 Severity Mapping
 ^^^^^^^^^^^^^^^^
 
-The following table shows how severity values are mapped:
-
 .. list-table:: Severity Value Mappings
    :header-rows: 1
    :widths: 50 50
@@ -144,47 +142,36 @@ Comments (Column J)
 
 .. code-block:: none
 
-   Milestone {number}:
-   {comments}
-   Milestone Status: {status}
-   Milestone Date: MM/dd/yyyy
+   Milestone {Milestone #}
+   {Milestone Comments}
+   Milestone Status: {Milestone Status}
+   Milestone Date: {Milestone Due Date (MM/dd/yyyy)}
 
 Changes (Column K)
 ~~~~~~~~~~~~~~~~
 
 .. code-block:: none
 
-   Milestone {number} Changes:
-   {changeComments}
-   Milestone Status: {status}
-   Milestone Date Change: MM/dd/yyyy
+   Milestone {Milestone #} Changes:
+   {Milestone Change Comments}
+   Milestone Status: {Milestone Status}
+   Milestone Date Change: {Milestone Due Date (MM/dd/yyyy)}
 
 .. note::
 
    Column I contains "1" if comments exist, otherwise the column remains empty.
 
-Export Process Details
---------------------
-
-Filtering Rules
-~~~~~~~~~~~~~
-
-* POAMs with status "Draft" are excluded from export
-* Empty/undefined fields use configured default values
-* Dates are consistently formatted as MM/dd/yyyy
-
-Special Field Handling
-~~~~~~~~~~~~~~~~~~~~
+Special Handling
+^^^^^^^^^^^^^^^^
 
 Vulnerability Source
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~
 
-* **STIG**: Uses vulnerability title
-* **Task Order**: Prefixed with "Task Order #:"
-* **Others**: Raw source value
+* **STIG**: Formatted as {STIG TITLE} :: {Revision} Benchmark Date: {Last Revision Date}
+* **ACAS**: Plugin Name
 
 Status Mapping
-^^^^^^^^^^^^
+~~~~~~~~~~~~~~~
 
 * **Closed**: Mapped to "Completed"
 * **Others**: Mapped to "Ongoing"
@@ -192,15 +179,6 @@ Status Mapping
 .. note::
    Draft POAMs are not exported.
 
-Impact Description
-^^^^^^^^^^^^^^^
-
-* Appended to CCI field when present
-
-.. seealso::
-   * :ref:`poam-creation`
-   * :ref:`poam-management`
-   * :ref:`export-templates`
 
 .. warning::
    Ensure all required fields are populated before export to avoid unexpected default values in the exported document.
